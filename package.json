@@ -1,13 +1,13 @@
 {
-  "name": "stylelint-declaration-block-no-ignored-properties",
+  "name": "stylelint-declaration-block-ignored-properties",
   "description": "Disallow property values that are ignored due to another property value in the same rule.",
   "version": "2.5.0",
   "author": {
-    "name": "Krister Kari",
-    "url": "https://github.com/kristerkari/"
+    "name": "mnttea",
+    "url": "https://github.com/mnttea"
   },
   "bugs": {
-    "url": "https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties/issues"
+    "url": "https://github.com/mnttea/stylelint-declaration-block-ignored-properties/issues"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -67,7 +67,7 @@
     "CHANGELOG.md",
     "README.md"
   ],
-  "homepage": "https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties#readme",
+  "homepage": "https://github.com/mnttea/stylelint-declaration-block-ignored-properties#readme",
   "jest": {
     "clearMocks": true,
     "collectCoverage": false,
@@ -112,7 +112,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties.git"
+    "url": "git+https://github.com/mnttea/stylelint-declaration-block-ignored-properties.git"
   },
   "scripts": {
     "jest": "jest",
@@ -122,5 +122,8 @@
     "prettify": "prettier --write '**/*.{js,json}'",
     "release": "npmpub",
     "test": "jest --coverage"
+  },
+  "dependencies": {
+    "stylelint-declaration-block-no-ignored-properties": "https://github.com/mnttea/stylelint-declaration-block-ignored-properties/tarball/master"
   }
 }
