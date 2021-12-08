@@ -8,7 +8,7 @@ const validateOptions = stylelint.utils.validateOptions;
 const ruleName = "plugin/declaration-block-no-ignored-properties";
 
 const messages = ruleMessages(ruleName, {
-  rejected: (ignore, cause) => `Unexpected "${ignore}" with "${cause}"`,
+  rejected: (ignore, cause, ignoredProperties) => `Unexpected "${ignore}" can't be used with "${cause}". With "${cause}" the following properties: "${ignoredProperties}" have no effect.`
 });
 
 const ignored = [
@@ -173,7 +173,7 @@ const rule = (actual) => {
             }
 
             report({
-              message: messages.rejected(node.prop, decl.toString()),
+              message: messages.rejected(node.prop, decl.toString(), ignoredProperties.join(", ")),
               node,
               result,
               ruleName,
