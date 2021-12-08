@@ -1,7 +1,7 @@
 {
   "name": "stylelint-declaration-block-ignored-properties",
   "description": "Disallow property values that are ignored due to another property value in the same rule.",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "author": {
     "name": "mnttea",
     "url": "https://github.com/mnttea"
@@ -122,8 +122,5 @@
     "prettify": "prettier --write '**/*.{js,json}'",
     "release": "npmpub",
     "test": "jest --coverage"
-  },
-  "dependencies": {
-    "stylelint-declaration-block-no-ignored-properties": "https://github.com/mnttea/stylelint-declaration-block-ignored-properties/tarball/master"
   }
 }
